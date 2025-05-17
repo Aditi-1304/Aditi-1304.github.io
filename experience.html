@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Experience</title>
     <link rel="stylesheet" href="styleexp.css">
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html" class="active">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="profiles.html">Portfolios</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div class="nav-brand">Aditi Agrawal</div>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="skills.html" >Skills</a></li>
+            <li><a href="education.html" >Education</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="profiles.html">Portfolios</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
+
     <div class="container">
         <h1>My Experience</h1>
 
@@ -28,7 +35,6 @@
                 - Conducted risk assessments and proposed mitigation strategies, improving project delivery reliability.<br>
                 - Created process flow diagrams and documentation to support scalable system designs and efficient workflows.<br>
                 - Participated in cross-functional meetings, contributing to brainstorming and solution design for software system improvements.<br>
-
             </p>
         </div>
     </div>
@@ -36,5 +42,13 @@
     <footer>
         <p>Made by Aditi Agrawal &copy; 2025</p>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('nav-menu-visible');
+        });
+    </script>
 </body>
 </html>
