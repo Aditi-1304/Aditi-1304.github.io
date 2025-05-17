@@ -1,90 +1,161 @@
-body {
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-    color: #333;
+    box-sizing: border-box;
 }
 
-nav {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    padding-top: 80px;
+}
+
+.navbar {
+    background: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: transform 0.3s, color 0.3s ease-in-out;
+.nav-brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-nav a:hover, nav a.active {
-    text-decoration: underline;
+.nav-toggle {
+    display: none;
+    font-size: 26px;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
     color: #ffe082;
-    transform: scale(1.1);
+    border-bottom: 2px solid #ffe082;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 100px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeIn 0.8s ease-in-out;
-}
+} 
 
 h1 {
-    font-size: 32px;
-    color: #6a11cb;
-}
-
-.project-details {
-    text-align: left;
-    margin-top: 30px;
-}
-
-.project-details h2 {
-    color: #2575fc;
-    font-size: 24px;
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-.project-details p {
-    line-height: 1.6;
+.subtitle {
     font-size: 18px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
+.project-card  {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-top: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-header h2 {
+    font-size: 24px;
+    color: #d4a412;
+}
+
+.project-date {
+    font-size: 14px;
+    color: #ffe082;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 16px;
+    margin: 10px 0 20px;
+    line-height: 1.6;
+}
+
+h3 {
+    font-size: 18px;
+    color: #ffe082;
+    margin-top: 15px;
+}
+
+.features,
 .tech-stack {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.features li,
+.tech-stack li {
+    background-color: #e3f2fd;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .tech-stack li {
-    display: inline-block;
-    background: #2575fc;
+    background-color: #d4a412;
     color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 footer {
