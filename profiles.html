@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="stylepor.css">
 </head>
 <body>
-
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="profiles.html" class="active">Portfolios</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div class="nav-brand">Aditi Agrawal</div>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="skills.html" >Skills</a></li>
+            <li><a href="education.html" >Education</a></li>
+            <li><a href="experience.html" >Experience</a></li>
+            <li><a href="projects.html" >Projects</a></li>
+            <li><a href="profiles.html" class="active">Portfolios</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <div class="container">
         <h1>My Portfolios</h1>
-        <p>Here are some of my online profiles showcasing my competitive programming skills and projects:</p>
+        <p class="subtitle">Here are some of my online profiles showcasing my competitive programming skills and projects:</p>
         
         <div class="portfolio-section">
             <div class="portfolio-card">
@@ -47,12 +52,26 @@
                 <p>My coding practice and certifications on HackerRank.</p>
                 <a href="https://www.hackerrank.com/aditi786aaa" class="primary-btn" target="_blank">Visit Profile</a>
             </div>
+
+            <div class="portfolio-card">
+                <h2>Codolio</h2>
+                <p>My coding practice and certifications on Codolio.</p>
+                <a href="https://codolio.com/profile/Aditi_786" class="primary-btn" target="_blank">Visit Profile</a>
+            </div>
         </div>
     </div>
 
     <footer>
         <p>Made by Aditi Agrawal &copy; 2025</p>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('nav-menu-visible');
+        });
+    </script>
 
 </body>
 </html>
