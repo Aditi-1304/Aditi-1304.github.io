@@ -1,59 +1,86 @@
-body {
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-    color: #333;
+    box-sizing: border-box;
 }
 
-nav {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    padding-top: 80px;
+}
+
+.navbar {
+    background: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: transform 0.3s, color 0.3s ease-in-out;
+.nav-brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-nav a:hover, nav a.active {
-    text-decoration: underline;
+.nav-toggle {
+    display: none;
+    font-size: 26px;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
     color: #ffe082;
-    transform: scale(1.1);
+    border-bottom: 2px solid #ffe082;
 }
 
 .container {
-    max-width: 900px;
-    margin: 100px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
-    animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
+    text-align: center;
+    color: #1f1f1f;
     font-size: 36px;
-    color: #6a11cb;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-.subtitle {
-    font-size: 18px;
-    color: #7f8c8d;
-    margin-bottom: 30px;
+.intro {
     text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
 }
 
 .edu-section {
@@ -67,7 +94,7 @@ h1 {
 .edu-card {
     background: white;
     padding: 20px;
-    border-left: 5px solid #6a11cb;
+    border-left: 5px solid #ffe082;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: left;
@@ -83,7 +110,7 @@ h1 {
 
 .edu-header h3 {
     font-size: 20px;
-    color: #2575fc;
+    color: #d4a412;
     margin: 0;
 }
 
