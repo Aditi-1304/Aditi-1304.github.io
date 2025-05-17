@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="styleabout.css">
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="profiles.html">Portfolios</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div class="nav-brand">Aditi Agrawal</div>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+            ☰
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="profiles.html">Portfolios</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
+    
     <div class="container">
         <img src="../assets/prof.webp" alt="Aditi Agrawal" class="profile-image">
         <h1>Hi, I'm Aditi Agrawal</h1>
@@ -42,5 +49,13 @@
     <footer>
         <p>Made by Aditi Agrawal &copy; 2025</p>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('nav-menu-visible');
+        });
+    </script>
 </body>
 </html>
