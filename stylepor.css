@@ -96,6 +96,7 @@ h1 {
 .portfolio-card {
     background: white;
     border-radius: 10px;
+    border-left: 5px solid #ffe082;
     padding: 40px;
     width: 280px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -160,5 +161,35 @@ footer {
 
     nav a {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #2a2a2a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+        padding: 20px;
+    }
+
+    .nav-menu-visible {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
     }
 }

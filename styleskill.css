@@ -112,6 +112,7 @@ h1 {
 .skill-card {
     background: #fafafa;
     border-radius: 12px;
+    border-left: 5px solid #ffe082;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
