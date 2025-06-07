@@ -118,7 +118,8 @@ h1 {
 
 .portfolio-card h2 {
     font-size: 24px;
-    color: #d4a412;
+    /* color: #d4a412; */
+    color: #FFC107;
     margin-bottom: 15px;
     border-bottom: 2px solid #ffe082;
     display: inline-block;

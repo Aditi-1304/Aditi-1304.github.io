@@ -103,7 +103,6 @@ h1 {
 
 .project-header h2 {
     font-size: 24px;
-    /* color: #d4a412; */
     color: #FFC107;
 }
 
@@ -159,10 +158,8 @@ h3 {
 }
 
 .tech-stack li {
-    background-color: #FFC107; /* Golden Yellow */
+    background-color: #FFC107;
     color: #222;
-    /* background-color: #e3f2fd;
-    color: #333; */
     padding: 8px 15px;
     border-radius: 5px;
     font-size: 14px;
