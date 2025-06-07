@@ -9,8 +9,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    color: #333;
+    /* color: #333;
+    padding-top: 80px; */
+    color: #1f1f1f;
     padding-top: 80px;
+    line-height: 1.6;
 }
 
 .navbar {
@@ -76,6 +79,13 @@ h1 {
     margin-bottom: 10px;
 }
 
+.intro {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
 .experience-card {
     background: white;
     padding: 40px;
@@ -87,10 +97,20 @@ h1 {
     animation: fadeInUp 0.8s ease-in-out;
 }
 
+.experience-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.experience-card ul li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
 .experience-card h3 {
     font-size: 24px;
-    /* color: #d4a412; */
     color: #FFC107;
+    margin-bottom: 10px;
 }
 
 .experience-card p {
@@ -99,9 +119,18 @@ h1 {
 }
 
 .experience-card .duration {
-    font-weight: bold;
-    /* color: #c1a554; */
-    color: #f3e713;
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
 }
 
 @keyframes fadeInUp {
@@ -143,11 +172,8 @@ h1 {
     p {
         font-size: 16px;
     }
-}
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
+    .experience-card ul li {
+        font-size: 16px;
+    }
 }

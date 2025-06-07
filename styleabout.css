@@ -84,7 +84,7 @@ h1 {
     color: #1f1f1f;
 }
 
-p {
+.container p {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.8;
@@ -140,13 +140,11 @@ footer {
     margin-top: 60px;
 }
 
-/* Fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;

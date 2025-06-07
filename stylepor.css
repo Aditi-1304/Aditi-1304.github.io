@@ -146,12 +146,13 @@ h1 {
 }
 
 footer {
+    background: #1f1f1f;
+    color: white;
     text-align: center;
     padding: 20px;
-    background: #222;
-    color: white;
+    margin-top: 60px;
+    font-size: 14px;
 }
-
 
 @media (max-width: 768px) {
     .portfolio-card {
