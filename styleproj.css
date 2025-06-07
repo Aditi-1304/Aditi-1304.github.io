@@ -103,7 +103,8 @@ h1 {
 
 .project-header h2 {
     font-size: 24px;
-    color: #d4a412;
+    /* color: #d4a412; */
+    color: #FFC107;
 }
 
 .project-link {
@@ -115,21 +116,22 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     object-fit: cover;
 }
 
-
 .project-description {
     font-size: 16px;
     margin: 10px 0 20px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 h3 {
     font-size: 18px;
-    color: #ffe082;
+    color: #ffbf00;
     margin-top: 15px;
 }
 
@@ -143,10 +145,24 @@ h3 {
     gap: 10px;
 }
 
-.features li,
-.tech-stack li {
-    background-color: #e3f2fd;
+.features li {
+    background-color: #FFF8E1;
+    border-left: 4px solid #FFD54F;
     color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.tech-stack li {
+    background-color: #FFC107; /* Golden Yellow */
+    color: #222;
+    /* background-color: #e3f2fd;
+    color: #333; */
     padding: 8px 15px;
     border-radius: 5px;
     font-size: 14px;

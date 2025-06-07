@@ -89,7 +89,8 @@ h1 {
 
 .experience-card h3 {
     font-size: 24px;
-    color: #d4a412;
+    /* color: #d4a412; */
+    color: #FFC107;
 }
 
 .experience-card p {
@@ -99,7 +100,8 @@ h1 {
 
 .experience-card .duration {
     font-weight: bold;
-    color: #c1a554;
+    /* color: #c1a554; */
+    color: #f3e713;
 }
 
 @keyframes fadeInUp {
