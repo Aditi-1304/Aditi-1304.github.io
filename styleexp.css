@@ -9,8 +9,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    /* color: #333;
-    padding-top: 80px; */
     color: #1f1f1f;
     padding-top: 80px;
     line-height: 1.6;
@@ -105,6 +103,7 @@ h1 {
 .experience-card ul li {
     font-size: 17px;
     margin-bottom: 8px;
+    text-align: justify;
 }
 
 .experience-card h3 {
