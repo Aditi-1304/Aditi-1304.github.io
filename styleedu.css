@@ -8,13 +8,27 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    color: #333;
+    color: #fff;
+    background: #0f0f0f;
+    overflow-x: hidden;
+    position: relative;
     padding-top: 80px;
 }
 
+.background-image {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/books.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    filter: brightness(0.7); 
+}
+
 .navbar {
-    background: #1f1f1f;
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,79 +74,8 @@ body {
     border-bottom: 2px solid #ffe082;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-}
-
-h1 {
-    text-align: center;
-    color: #1f1f1f;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.intro {
-    text-align: center;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-.edu-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 700px;
-    margin: 30px auto;
-}
-
-.edu-card {
-    background: white;
-    padding: 20px;
-    border-left: 5px solid #ffe082;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    animation: fadeInUp 0.8s ease-in-out;
-    margin-bottom: 15px;
-}
-
-.edu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.edu-header h3 {
-    font-size: 20px;
-    color: #FFC107;
-    margin: 0;
-}
-
-.edu-institute {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin: 10px 0 5px;
-}
-
-.container p, .edu-institute{
-    margin: 10px;
-}
-
-.year {
-    font-size: 14px;
-    color: #6a11cb;
-    font-weight: bold;
-}
-
 footer {
-    background: #1f1f1f;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     padding: 20px;
@@ -140,15 +83,98 @@ footer {
     font-size: 14px;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.intro {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.edu-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+.edu-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.edu-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.edu-icon {
+    font-size: 32px;
+    color: #ffe082;
+    margin-bottom: 15px;
+    display: block; 
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap; 
+}
+
+.edu-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffe082;
+    margin: 0;
+}
+
+.edu-year {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ccc;
+    background: rgba(0,0,0,0.2);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.edu-institute {
+    font-size: 17px;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-bottom: 8px;
+}
+
+.edu-details {
+    font-size: 15px;
+    color: #e0e0e0;
 }
 
 @media (max-width: 768px) {
@@ -176,18 +202,21 @@ footer {
         font-size: 28px;
     }
 
-    p {
+    .intro {
         font-size: 16px;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .edu-card {
-        text-align: center;
+    
+    .edu-icon {
+        font-size: 28px;
     }
 
     .edu-header {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .edu-card {
+        padding: 20px;
     }
 }
