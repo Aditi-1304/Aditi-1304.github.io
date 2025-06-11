@@ -73,12 +73,12 @@ body {
 }
 
 footer {
-    background: #1f1f1f;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 60px;
     font-size: 14px;
+    margin-top: 60px;
 }
 
 .container {
@@ -97,11 +97,11 @@ footer {
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
     border-radius: 16px;
     padding: 40px 30px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -207,7 +207,7 @@ h1 {
     .nav-menu {
         display: none;
         flex-direction: column;
-        background: #2a2a2a;
+        background: rgba(0, 0, 0, 0.8);
         position: absolute;
         top: 60px;
         right: 0;
@@ -220,24 +220,8 @@ h1 {
         display: flex;
     }
 
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: #2a2a2a;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        text-align: right;
-        padding: 20px;
-    }
-
-    .nav-menu-visible {
-        display: flex;
+    nav a {
+        font-size: 14px;
     }
 
     h1 {
@@ -252,12 +236,9 @@ h1 {
         grid-template-columns: 1fr;
     }
 
-    nav a {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 28px;
+    .container {
+        padding: 60px 15px;
+        margin: 0 20px;
     }
 
     p {
