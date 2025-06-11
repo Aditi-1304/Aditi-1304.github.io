@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Certifications</title>
+    <link rel="stylesheet" href="stylecert.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Aditi Agrawal</div>
+        <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certificate.html" class="active">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="profiles.html">Portfolios</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Certifications</h1>
+        <p class="intro">Recognitions of my knowledge, upskilling, and hands-on experience in key technical domains.</p>
+
+        <div class="cert-container">
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Zero Trust Cloud Security Virtual Internship</h3>
+                    <span class="cert-date">Jan - Mar 2024</span>
+                </div>
+                <p class="cert-org">AICTE Eduskills</p>
+                <p>Explored Zero Trust Architecture, IAM policies, and cloud security best practices across cloud platforms.</p>
+                <a href="https://example.com/zero-trust-certificate" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>AWS Academy Cloud Foundations</h3>
+                    <span class="cert-date">Mar 2024</span>
+                </div>
+                <p class="cert-org">Amazon Web Services (AWS)</p>
+                <p>Built foundational understanding of cloud computing, core AWS services, security, architecture, pricing, and support.</p>
+                <a href="https://example.com/aws-foundations-certificate" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Google Data Analytics Professional Certificate</h3>
+                    <span class="cert-date">Dec 2023</span>
+                </div>
+                <p class="cert-org">Google via Coursera</p>
+                <p>Applied data cleaning, analysis, and visualization using spreadsheets, SQL, R, and Tableau.</p>
+                <a href="https://example.com/google-data-analytics" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+                    <span class="cert-date">Feb 2024</span>
+                </div>
+                <p class="cert-org">Microsoft</p>
+                <p>Gained expertise in cloud concepts, Azure services, workloads, governance, and cost management.</p>
+                <a href="https://example.com/azure-az900-certificate" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by Aditi Agrawal &copy; 2025</p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('nav-menu-visible');
+        });
+    </script>
+</body>
+</html>
