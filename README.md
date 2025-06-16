@@ -30,7 +30,7 @@ To run this locally:
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Aditi-1304/portfolio-website.git
+git clone https://github.com/Aditi-1304/Aditi-1304.github.io.git
 ```
 
 2. Open `index.html` in your browser.
