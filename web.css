@@ -37,7 +37,7 @@ body {
 }
 
 .nav-brand {
-    color: #fff;
+    color: #138B83;
     font-size: 20px;
     font-weight: 600;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-menu li a {
-    color: #fff;
+    color: #87ACA3;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
@@ -67,8 +67,8 @@ body {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-    color: #ffe082;
-    border-bottom: 2px solid #ffe082;
+    color: #2B7C85;
+    border-bottom: 2px solid #2B7C85;
 }
 
 .hero {
@@ -105,14 +105,16 @@ body {
 
 .hero-text h1 {
     font-size: 52px;
+    color: #37BEB0;
     font-weight: 700;
     margin-bottom: 15px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
-.hero-text p {
+.hero-text {
     font-size: 20px;
     font-weight: 300;
+    color: #A4E5E0;
     line-height: 1.6;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
@@ -120,8 +122,13 @@ body {
 
 .hero-text h2 {
     font-size: 28px;
+    color: #248498;
     margin-top: 20px;
     font-weight: 500;
+}
+
+.t3 {
+    color: #429E9D;
 }
 
 .cta-btn {
@@ -129,7 +136,7 @@ body {
     margin-top: 25px;
     padding: 14px 30px;
     border-radius: 30px;
-    background: #ffe082;
+    background: #00C4B0;
     color: #1f1f1f;
     font-weight: 600;
     text-decoration: none;
@@ -139,7 +146,7 @@ body {
 
 .cta-btn:hover {
     transform: scale(1.1);
-    background: #ffd54f;
+    background: #00EAD9;
 }
 
 footer {
