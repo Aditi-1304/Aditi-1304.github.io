@@ -39,7 +39,7 @@ body {
 }
 
 .nav-brand {
-    color: #fff;
+    color: #138B83;
     font-size: 20px;
     font-weight: 600;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .nav-menu li a {
-    color: #fff;
+    color: #87ACA3;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
@@ -69,8 +69,8 @@ body {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-    color: #ffe082;
-    border-bottom: 2px solid #ffe082;
+    color: #2B7C85;
+    border-bottom: 2px solid #2B7C85;
 }
 
 .container {
@@ -119,6 +119,7 @@ body {
 
 h1 {
     font-size: 48px;
+    color: #37BEB0;
     font-weight: 700;
     margin-bottom: 15px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -127,6 +128,7 @@ h1 {
 .container p {
     font-size: 20px;
     font-weight: 300;
+    color: #A4E5E0;
     line-height: 1.6;
     margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -152,24 +154,24 @@ h1 {
 }
 
 .primary-btn {
-    background: #ffe082;
+    background: #00C4B0;
     color: #1f1f1f;
 }
 
 .primary-btn:hover {
     transform: scale(1.05);
-    background: #ffd54f;
+    background: #00584f;
 }
 
 .secondary-btn {
-    background: #fff;
+    background: #7EC8E3;
     color: #1f1f1f;
     border: 2px solid #1f1f1f;
 }
 
 .secondary-btn:hover {
     transform: scale(1.05);
-    background: #f0f0f0;
+    background: #0074B7;
 }
 
 footer {
