@@ -40,7 +40,7 @@ body {
 }
 
 .nav-brand {
-    color: #fff;
+    color: #138B83;
     font-size: 20px;
     font-weight: 600;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .nav-menu li a {
-    color: #fff;
+    color: #87ACA3;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
@@ -70,8 +70,8 @@ body {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-    color: #ffe082;
-    border-bottom: 2px solid #ffe082;
+    color: #2B7C85;
+    border-bottom: 2px solid #2B7C85;
 }
 
 footer {
@@ -104,12 +104,12 @@ h1 {
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #fff;
+    color: #37BEB0;
 }
 
 .intro {
     font-size: 18px;
-    color: #ccc;
+    color: #6CB0A8;
     margin-bottom: 40px;
 }
 
@@ -137,7 +137,7 @@ h1 {
 
 .edu-icon {
     font-size: 32px;
-    color: #ffe082;
+    color: #0C6170;
     margin-bottom: 15px;
     display: block; 
 }
@@ -153,14 +153,14 @@ h1 {
 .edu-header h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #ffe082;
+    color: #0a93ab;
     margin: 0;
 }
 
 .edu-year {
     font-size: 15px;
     font-weight: 500;
-    color: #ccc;
+    color: #A4E5E0;
     background: rgba(0,0,0,0.2);
     padding: 4px 10px;
     border-radius: 20px;
@@ -169,13 +169,13 @@ h1 {
 .edu-institute {
     font-size: 17px;
     font-weight: bold;
-    color: #f0f0f0;
+    color: #2de4d4;
     margin-bottom: 8px;
 }
 
 .edu-details {
     font-size: 15px;
-    color: #e0e0e0;
+    color: #A4E5E0;
 }
 
 @keyframes fadeIn {
