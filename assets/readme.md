@@ -1,3 +1,8 @@
+# Assets Folder
+
+This folder contains all the images and documents used for the website.
+I have carefully chosen each element to depict each component efficiently.
+
 # Colour Scheme Used
 
 - name : #138B83
