@@ -44,7 +44,7 @@ No build tools or frameworks are needed. It’s pure static HTML/CSS/JS.
 If you'd like to connect or collaborate:
 
 - **Email**: [aditi786aaa@gmail.com](mailto:aditi786aaa@gmail.com)
-- **LinkedIn**: [linkedin.com/in/aditi-agrawal-b63798268](https://www.linkedin.com/in/aditi-agrawal-b63798268)
+- **LinkedIn**: [linkedin.com/in/aditi-agrawal-b63798268](https://www.linkedin.com/in/aditi-agr)
 - **GitHub**: [Aditi-1304](https://github.com/Aditi-1304)
 
 ---
