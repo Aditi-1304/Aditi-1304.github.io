@@ -31,7 +31,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./assets/bg_image.webp') center/cover no-repeat;
+    background: url('./assets/bg2.jpg') center/cover no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -75,12 +75,11 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
-    /* transition: 0.3s; */
-    transition: color 0.3s ease; /* Transition for color change */
+    transition: color 0.3s ease; 
     display: flex;
     align-items: center; 
     gap: 5px;
-    position: relative; /* Essential for the pseudo-element underline */
+    position: relative; 
     overflow: hidden;
 }
 
@@ -94,21 +93,21 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Full width */
+    width: 100%;
     height: 2px;
-    background: #2B7C85; /* Color of the underline */
-    transform: scaleX(0); /* Start hidden (scaleX 0) */
-    transform-origin: bottom right; /* Animate from right to left initially */
-    transition: transform 0.3s ease-out; /* Smooth transition for the transform */
+    background: #2B7C85; 
+    transform: scaleX(0);
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-out;
 }
 
 .nav-menu li a:hover::after {
-    transform: scaleX(1); /* Expand to full width on hover */
-    transform-origin: bottom left; /* Animate from left to right on hover */
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
 }
 
 .nav-menu li a.active {
-    color: #2B7C85; /* Active link color */
+    color: #2B7C85;
 }
 
 .nav-menu li a.active::after {
@@ -143,13 +142,14 @@ body {
 }
 
 .hero-text {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
     animation: fadeIn 1s ease-in-out;
 }
@@ -199,7 +199,6 @@ body {
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    /* transition: transform 0.3s ease, background 0.3s; */
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
