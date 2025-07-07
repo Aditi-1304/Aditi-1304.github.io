@@ -23,7 +23,6 @@ body {
     background: #0f0f0f;
     overflow-x: hidden;
     position: relative;
-    padding-top: 80px;
 }
 
 .background-image {
@@ -75,7 +74,44 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
-    transition: 0.3s;
+    transition: color 0.3s ease; 
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.nav-menu li a i {
+    font-size: 16px; 
+    margin-right: 3px; 
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2B7C85; 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-out; 
+}
+
+.nav-menu li a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.nav-menu li a.active {
+    color: #2B7C85; 
+}
+
+.nav-menu li a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-menu li a:hover,
@@ -84,23 +120,18 @@ body {
     border-bottom: 2px solid #2B7C85;
 }
 
-footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
-
 .contact-hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 90vh;
+    padding-top: 80px;
+    padding-bottom: 20px;
     position: relative;
     color: #fff;
     text-align: center;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact-hero::before {
@@ -114,19 +145,20 @@ footer {
 
 .contact-glass {
     background: rgba(0, 0, 0, 0.5);
-    padding: 30px 40px;
+    padding: 50px 30px;
     border-radius: 10px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
     position: relative;
     z-index: 1;
-    max-width: 800px;
-    padding: 20px;
+    max-width: 900px;
     animation: fadeIn 1s ease-in-out;
 }
 
 .contact-glass h1 {
+    font-family: 'Great Vibes', cursive;
     font-size: 52px;
-    font-weight: 700;
+    font-weight: 600;
     color: #37BEB0;
     margin-bottom: 15px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
@@ -139,6 +171,21 @@ footer {
     line-height: 1.6;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.button-glass-overlay {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-group {
@@ -165,6 +212,34 @@ footer {
 .contact-btn:hover {
     background: #67fff5;
     transform: scale(1.05);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px; 
+}
+
+.social-links a {
+    color: #fff; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00C4B0; 
+    transform: translateY(-3px); 
 }
 
 @keyframes fadeIn {
@@ -194,7 +269,12 @@ footer {
     }
 
     .contact-glass h1 {
-        font-size: 28px;
+        font-size: 38px;
+    }
+
+    .button-glass-overlay {
+        padding: 15px; 
+        width: 90%;
     }
 
     .subtitle {
