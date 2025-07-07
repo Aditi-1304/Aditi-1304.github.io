@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Oswald:wght@200..700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +17,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     color: #87ACA3;
     background: #0f0f0f;
     min-height: 100vh;
@@ -78,7 +89,44 @@ body::before {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
-    transition: 0.3s;
+    transition: color 0.3s ease; 
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.nav-menu li a i {
+    font-size: 16px; 
+    margin-right: 3px; 
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2B7C85; 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-out; 
+}
+
+.nav-menu li a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.nav-menu li a.active {
+    color: #2B7C85; 
+}
+
+.nav-menu li a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-menu li a:hover,
@@ -115,7 +163,8 @@ body::before {
 }
 
 h1 {
-    font-size: 38px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #37BEB0;
@@ -137,7 +186,7 @@ h1 {
     margin-top: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
 }
 
 .project-card:hover {
@@ -153,7 +202,13 @@ h1 {
 }
 
 .project-header h2 {
-    font-size: 28px;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Tangerine', cursive; */
+    /* font-family: "Oswald", sans-serif; */
+    font-family: "Libertinus Math", system-ui;
+    font-size: 34px;
+    font-weight: 700;
     color: #2B7C85;
     margin-bottom: 8px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -289,7 +344,7 @@ footer {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .subtitle {
