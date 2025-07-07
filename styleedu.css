@@ -144,7 +144,7 @@ body {
 h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
     color: #37BEB0;
 }
@@ -172,10 +172,10 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.edu-card:hover {
+/* .edu-card:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-}
+} */
 
 .edu-icon {
     font-size: 32px;

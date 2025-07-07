@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Oswald:wght@200..700&display=swap');
 
 
 * {
@@ -180,7 +181,8 @@ h1 {
 }
 
 .skill-title {
-    font-size: 20px;
+    font-family: "Libertinus Math", system-ui;
+    font-size: 25px;
     font-weight: 600;
     color: #429E9D;
     margin-bottom: 6px;
