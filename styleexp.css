@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Oswald:wght@200..700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +17,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     background: #0f0f0f;
     overflow-x: hidden;
@@ -20,7 +31,7 @@ body {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: url('./assets/exp.jpg') center/cover no-repeat;
+    background: url('./assets/bg4.jpg') center/cover no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -65,22 +76,50 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 10px;
-    transition: 0.3s;
+    transition: color 0.3s ease; 
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.nav-menu li a i {
+    font-size: 16px; 
+    margin-right: 3px; 
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2B7C85; 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-out; 
+}
+
+.nav-menu li a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.nav-menu li a.active {
+    color: #2B7C85; 
+}
+
+.nav-menu li a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
     color: #2B7C85;
     border-bottom: 2px solid #2B7C85;
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 80px;
-    font-size: 14px;
 }
 
 .container {
@@ -101,7 +140,8 @@ footer {
 }
 
 h1 {
-    font-size: 38px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #37BEB0;
@@ -142,7 +182,8 @@ h1 {
 }
 
 .exp-title-group h3 {
-    font-size: 22px;
+    font-family: "Libertinus Math", system-ui;
+    font-size: 25px;
     font-weight: 600;
     color: #0a93ab;
     margin: 0;
@@ -180,6 +221,35 @@ h1 {
     font-size: 14px;
 }
 
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px; 
+}
+
+.social-links a {
+    color: #fff; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00C4B0; 
+    transform: translateY(-3px); 
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -212,7 +282,7 @@ h1 {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 38px;
     }
 
     .intro {
