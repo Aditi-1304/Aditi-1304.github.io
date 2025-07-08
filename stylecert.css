@@ -310,6 +310,10 @@ footer {
         font-size: 16px;
     }
 
+    .cert-title {
+        font-size: 24px;
+    }
+
     .cert-grid {
         grid-template-columns: 1fr;
     }
