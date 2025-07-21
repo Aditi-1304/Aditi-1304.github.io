@@ -5,7 +5,7 @@ This site showcases my technical skills, projects, experiences, and professional
 
 ## Live Demo
 
-[Visit Portfolio](https://aditi-1304.github.io/index.html)
+[Visit Portfolio](https://ctrladiti.github.io/index.html)
 
 ## Features
 
